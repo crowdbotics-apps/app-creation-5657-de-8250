@@ -119,7 +119,7 @@ export class _Blank extends React.Component {
           borderBottomWidth: 0,
           borderRadius: 0,
           textDecorationLine: "none",
-          textTransform: "none",
+          textTransform: "uppercase",
           lineHeight: 12,
           letterSpacing: 0,
           width: 200,
