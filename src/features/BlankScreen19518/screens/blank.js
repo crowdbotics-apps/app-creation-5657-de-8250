@@ -121,7 +121,9 @@ export class _Blank extends React.Component {
           textDecorationLine: "none",
           textTransform: "none",
           lineHeight: 12,
-          letterSpacing: 0
+          letterSpacing: 0,
+          width: 200,
+          height: 100
         }}
         checked={this.state.CheckBox_4}
         onChange={nextChecked => this.setState({ CheckBox_4: nextChecked })}
