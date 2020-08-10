@@ -277,3 +277,125 @@ export const rest_auth_user_partial_updateFailed = error => ({
   type: types.REST_AUTH_USER_PARTIAL_UPDATE_FAILED,
   error
 })
+export const api_v1_fnhgjhjgjh_list = () => ({
+  type: types.API_V1_FNHGJHJGJH_LIST
+})
+export const api_v1_fnhgjhjgjh_listSucceeded = response => ({
+  type: types.API_V1_FNHGJHJGJH_LIST_SUCCEEDED,
+  response
+})
+export const api_v1_fnhgjhjgjh_listFailed = error => ({
+  type: types.API_V1_FNHGJHJGJH_LIST_FAILED,
+  error
+})
+export const api_v1_fnhgjhjgjh_create = () => ({
+  type: types.API_V1_FNHGJHJGJH_CREATE
+})
+export const api_v1_fnhgjhjgjh_createSucceeded = response => ({
+  type: types.API_V1_FNHGJHJGJH_CREATE_SUCCEEDED,
+  response
+})
+export const api_v1_fnhgjhjgjh_createFailed = error => ({
+  type: types.API_V1_FNHGJHJGJH_CREATE_FAILED,
+  error
+})
+export const api_v1_fnhgjhjgjh_read = () => ({
+  type: types.API_V1_FNHGJHJGJH_READ
+})
+export const api_v1_fnhgjhjgjh_readSucceeded = response => ({
+  type: types.API_V1_FNHGJHJGJH_READ_SUCCEEDED,
+  response
+})
+export const api_v1_fnhgjhjgjh_readFailed = error => ({
+  type: types.API_V1_FNHGJHJGJH_READ_FAILED,
+  error
+})
+export const api_v1_fnhgjhjgjh_update = () => ({
+  type: types.API_V1_FNHGJHJGJH_UPDATE
+})
+export const api_v1_fnhgjhjgjh_updateSucceeded = response => ({
+  type: types.API_V1_FNHGJHJGJH_UPDATE_SUCCEEDED,
+  response
+})
+export const api_v1_fnhgjhjgjh_updateFailed = error => ({
+  type: types.API_V1_FNHGJHJGJH_UPDATE_FAILED,
+  error
+})
+export const api_v1_fnhgjhjgjh_partial_update = () => ({
+  type: types.API_V1_FNHGJHJGJH_PARTIAL_UPDATE
+})
+export const api_v1_fnhgjhjgjh_partial_updateSucceeded = response => ({
+  type: types.API_V1_FNHGJHJGJH_PARTIAL_UPDATE_SUCCEEDED,
+  response
+})
+export const api_v1_fnhgjhjgjh_partial_updateFailed = error => ({
+  type: types.API_V1_FNHGJHJGJH_PARTIAL_UPDATE_FAILED,
+  error
+})
+export const api_v1_fnhgjhjgjh_delete = () => ({
+  type: types.API_V1_FNHGJHJGJH_DELETE
+})
+export const api_v1_fnhgjhjgjh_deleteSucceeded = response => ({
+  type: types.API_V1_FNHGJHJGJH_DELETE_SUCCEEDED,
+  response
+})
+export const api_v1_fnhgjhjgjh_deleteFailed = error => ({
+  type: types.API_V1_FNHGJHJGJH_DELETE_FAILED,
+  error
+})
+export const api_v1_test_list = () => ({ type: types.API_V1_TEST_LIST })
+export const api_v1_test_listSucceeded = response => ({
+  type: types.API_V1_TEST_LIST_SUCCEEDED,
+  response
+})
+export const api_v1_test_listFailed = error => ({
+  type: types.API_V1_TEST_LIST_FAILED,
+  error
+})
+export const api_v1_test_create = () => ({ type: types.API_V1_TEST_CREATE })
+export const api_v1_test_createSucceeded = response => ({
+  type: types.API_V1_TEST_CREATE_SUCCEEDED,
+  response
+})
+export const api_v1_test_createFailed = error => ({
+  type: types.API_V1_TEST_CREATE_FAILED,
+  error
+})
+export const api_v1_test_read = () => ({ type: types.API_V1_TEST_READ })
+export const api_v1_test_readSucceeded = response => ({
+  type: types.API_V1_TEST_READ_SUCCEEDED,
+  response
+})
+export const api_v1_test_readFailed = error => ({
+  type: types.API_V1_TEST_READ_FAILED,
+  error
+})
+export const api_v1_test_update = () => ({ type: types.API_V1_TEST_UPDATE })
+export const api_v1_test_updateSucceeded = response => ({
+  type: types.API_V1_TEST_UPDATE_SUCCEEDED,
+  response
+})
+export const api_v1_test_updateFailed = error => ({
+  type: types.API_V1_TEST_UPDATE_FAILED,
+  error
+})
+export const api_v1_test_partial_update = () => ({
+  type: types.API_V1_TEST_PARTIAL_UPDATE
+})
+export const api_v1_test_partial_updateSucceeded = response => ({
+  type: types.API_V1_TEST_PARTIAL_UPDATE_SUCCEEDED,
+  response
+})
+export const api_v1_test_partial_updateFailed = error => ({
+  type: types.API_V1_TEST_PARTIAL_UPDATE_FAILED,
+  error
+})
+export const api_v1_test_delete = () => ({ type: types.API_V1_TEST_DELETE })
+export const api_v1_test_deleteSucceeded = response => ({
+  type: types.API_V1_TEST_DELETE_SUCCEEDED,
+  response
+})
+export const api_v1_test_deleteFailed = error => ({
+  type: types.API_V1_TEST_DELETE_FAILED,
+  error
+})

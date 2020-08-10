@@ -16,6 +16,24 @@ export default function apiReducer(state = initialState, action) {
     case types.API_V1_CUSTOMTEXT_PARTIAL_UPDATE:
     case types.API_V1_CUSTOMTEXT_PARTIAL_UPDATE_SUCCEEDED:
     case types.API_V1_CUSTOMTEXT_PARTIAL_UPDATE_FAILED:
+    case types.API_V1_FNHGJHJGJH_LIST:
+    case types.API_V1_FNHGJHJGJH_LIST_SUCCEEDED:
+    case types.API_V1_FNHGJHJGJH_LIST_FAILED:
+    case types.API_V1_FNHGJHJGJH_CREATE:
+    case types.API_V1_FNHGJHJGJH_CREATE_SUCCEEDED:
+    case types.API_V1_FNHGJHJGJH_CREATE_FAILED:
+    case types.API_V1_FNHGJHJGJH_READ:
+    case types.API_V1_FNHGJHJGJH_READ_SUCCEEDED:
+    case types.API_V1_FNHGJHJGJH_READ_FAILED:
+    case types.API_V1_FNHGJHJGJH_UPDATE:
+    case types.API_V1_FNHGJHJGJH_UPDATE_SUCCEEDED:
+    case types.API_V1_FNHGJHJGJH_UPDATE_FAILED:
+    case types.API_V1_FNHGJHJGJH_PARTIAL_UPDATE:
+    case types.API_V1_FNHGJHJGJH_PARTIAL_UPDATE_SUCCEEDED:
+    case types.API_V1_FNHGJHJGJH_PARTIAL_UPDATE_FAILED:
+    case types.API_V1_FNHGJHJGJH_DELETE:
+    case types.API_V1_FNHGJHJGJH_DELETE_SUCCEEDED:
+    case types.API_V1_FNHGJHJGJH_DELETE_FAILED:
     case types.API_V1_HOMEPAGE_LIST:
     case types.API_V1_HOMEPAGE_LIST_SUCCEEDED:
     case types.API_V1_HOMEPAGE_LIST_FAILED:
@@ -34,6 +52,24 @@ export default function apiReducer(state = initialState, action) {
     case types.API_V1_SIGNUP_CREATE:
     case types.API_V1_SIGNUP_CREATE_SUCCEEDED:
     case types.API_V1_SIGNUP_CREATE_FAILED:
+    case types.API_V1_TEST_LIST:
+    case types.API_V1_TEST_LIST_SUCCEEDED:
+    case types.API_V1_TEST_LIST_FAILED:
+    case types.API_V1_TEST_CREATE:
+    case types.API_V1_TEST_CREATE_SUCCEEDED:
+    case types.API_V1_TEST_CREATE_FAILED:
+    case types.API_V1_TEST_READ:
+    case types.API_V1_TEST_READ_SUCCEEDED:
+    case types.API_V1_TEST_READ_FAILED:
+    case types.API_V1_TEST_UPDATE:
+    case types.API_V1_TEST_UPDATE_SUCCEEDED:
+    case types.API_V1_TEST_UPDATE_FAILED:
+    case types.API_V1_TEST_PARTIAL_UPDATE:
+    case types.API_V1_TEST_PARTIAL_UPDATE_SUCCEEDED:
+    case types.API_V1_TEST_PARTIAL_UPDATE_FAILED:
+    case types.API_V1_TEST_DELETE:
+    case types.API_V1_TEST_DELETE_SUCCEEDED:
+    case types.API_V1_TEST_DELETE_FAILED:
     case types.REST_AUTH_LOGIN_CREATE:
     case types.REST_AUTH_LOGIN_CREATE_SUCCEEDED:
     case types.REST_AUTH_LOGIN_CREATE_FAILED:

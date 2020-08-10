@@ -54,6 +54,87 @@ function* api_v1_customtext_partial_updateWatcher() {
     api_v1_customtext_partial_updateWorker
   )
 }
+function* api_v1_fnhgjhjgjh_listWorker(action) {
+  try {
+    const result = yield call(apiService.api_v1_fnhgjhjgjh_list, action)
+    yield put(actions.api_v1_fnhgjhjgjh_listSucceeded(result))
+  } catch (err) {
+    yield put(actions.api_v1_fnhgjhjgjh_listFailed(err))
+  }
+}
+function* api_v1_fnhgjhjgjh_listWatcher() {
+  yield takeEvery(types.API_V1_FNHGJHJGJH_LIST, api_v1_fnhgjhjgjh_listWorker)
+}
+function* api_v1_fnhgjhjgjh_createWorker(action) {
+  try {
+    const result = yield call(apiService.api_v1_fnhgjhjgjh_create, action)
+    yield put(actions.api_v1_fnhgjhjgjh_createSucceeded(result))
+  } catch (err) {
+    yield put(actions.api_v1_fnhgjhjgjh_createFailed(err))
+  }
+}
+function* api_v1_fnhgjhjgjh_createWatcher() {
+  yield takeEvery(
+    types.API_V1_FNHGJHJGJH_CREATE,
+    api_v1_fnhgjhjgjh_createWorker
+  )
+}
+function* api_v1_fnhgjhjgjh_readWorker(action) {
+  try {
+    const result = yield call(apiService.api_v1_fnhgjhjgjh_read, action)
+    yield put(actions.api_v1_fnhgjhjgjh_readSucceeded(result))
+  } catch (err) {
+    yield put(actions.api_v1_fnhgjhjgjh_readFailed(err))
+  }
+}
+function* api_v1_fnhgjhjgjh_readWatcher() {
+  yield takeEvery(types.API_V1_FNHGJHJGJH_READ, api_v1_fnhgjhjgjh_readWorker)
+}
+function* api_v1_fnhgjhjgjh_updateWorker(action) {
+  try {
+    const result = yield call(apiService.api_v1_fnhgjhjgjh_update, action)
+    yield put(actions.api_v1_fnhgjhjgjh_updateSucceeded(result))
+  } catch (err) {
+    yield put(actions.api_v1_fnhgjhjgjh_updateFailed(err))
+  }
+}
+function* api_v1_fnhgjhjgjh_updateWatcher() {
+  yield takeEvery(
+    types.API_V1_FNHGJHJGJH_UPDATE,
+    api_v1_fnhgjhjgjh_updateWorker
+  )
+}
+function* api_v1_fnhgjhjgjh_partial_updateWorker(action) {
+  try {
+    const result = yield call(
+      apiService.api_v1_fnhgjhjgjh_partial_update,
+      action
+    )
+    yield put(actions.api_v1_fnhgjhjgjh_partial_updateSucceeded(result))
+  } catch (err) {
+    yield put(actions.api_v1_fnhgjhjgjh_partial_updateFailed(err))
+  }
+}
+function* api_v1_fnhgjhjgjh_partial_updateWatcher() {
+  yield takeEvery(
+    types.API_V1_FNHGJHJGJH_PARTIAL_UPDATE,
+    api_v1_fnhgjhjgjh_partial_updateWorker
+  )
+}
+function* api_v1_fnhgjhjgjh_deleteWorker(action) {
+  try {
+    const result = yield call(apiService.api_v1_fnhgjhjgjh_delete, action)
+    yield put(actions.api_v1_fnhgjhjgjh_deleteSucceeded(result))
+  } catch (err) {
+    yield put(actions.api_v1_fnhgjhjgjh_deleteFailed(err))
+  }
+}
+function* api_v1_fnhgjhjgjh_deleteWatcher() {
+  yield takeEvery(
+    types.API_V1_FNHGJHJGJH_DELETE,
+    api_v1_fnhgjhjgjh_deleteWorker
+  )
+}
 function* api_v1_homepage_listWorker(action) {
   try {
     const result = yield call(apiService.api_v1_homepage_list, action)
@@ -122,6 +203,75 @@ function* api_v1_signup_createWorker(action) {
 }
 function* api_v1_signup_createWatcher() {
   yield takeEvery(types.API_V1_SIGNUP_CREATE, api_v1_signup_createWorker)
+}
+function* api_v1_test_listWorker(action) {
+  try {
+    const result = yield call(apiService.api_v1_test_list, action)
+    yield put(actions.api_v1_test_listSucceeded(result))
+  } catch (err) {
+    yield put(actions.api_v1_test_listFailed(err))
+  }
+}
+function* api_v1_test_listWatcher() {
+  yield takeEvery(types.API_V1_TEST_LIST, api_v1_test_listWorker)
+}
+function* api_v1_test_createWorker(action) {
+  try {
+    const result = yield call(apiService.api_v1_test_create, action)
+    yield put(actions.api_v1_test_createSucceeded(result))
+  } catch (err) {
+    yield put(actions.api_v1_test_createFailed(err))
+  }
+}
+function* api_v1_test_createWatcher() {
+  yield takeEvery(types.API_V1_TEST_CREATE, api_v1_test_createWorker)
+}
+function* api_v1_test_readWorker(action) {
+  try {
+    const result = yield call(apiService.api_v1_test_read, action)
+    yield put(actions.api_v1_test_readSucceeded(result))
+  } catch (err) {
+    yield put(actions.api_v1_test_readFailed(err))
+  }
+}
+function* api_v1_test_readWatcher() {
+  yield takeEvery(types.API_V1_TEST_READ, api_v1_test_readWorker)
+}
+function* api_v1_test_updateWorker(action) {
+  try {
+    const result = yield call(apiService.api_v1_test_update, action)
+    yield put(actions.api_v1_test_updateSucceeded(result))
+  } catch (err) {
+    yield put(actions.api_v1_test_updateFailed(err))
+  }
+}
+function* api_v1_test_updateWatcher() {
+  yield takeEvery(types.API_V1_TEST_UPDATE, api_v1_test_updateWorker)
+}
+function* api_v1_test_partial_updateWorker(action) {
+  try {
+    const result = yield call(apiService.api_v1_test_partial_update, action)
+    yield put(actions.api_v1_test_partial_updateSucceeded(result))
+  } catch (err) {
+    yield put(actions.api_v1_test_partial_updateFailed(err))
+  }
+}
+function* api_v1_test_partial_updateWatcher() {
+  yield takeEvery(
+    types.API_V1_TEST_PARTIAL_UPDATE,
+    api_v1_test_partial_updateWorker
+  )
+}
+function* api_v1_test_deleteWorker(action) {
+  try {
+    const result = yield call(apiService.api_v1_test_delete, action)
+    yield put(actions.api_v1_test_deleteSucceeded(result))
+  } catch (err) {
+    yield put(actions.api_v1_test_deleteFailed(err))
+  }
+}
+function* api_v1_test_deleteWatcher() {
+  yield takeEvery(types.API_V1_TEST_DELETE, api_v1_test_deleteWorker)
 }
 function* rest_auth_login_createWorker(action) {
   try {
@@ -282,12 +432,24 @@ export default function* rootSaga() {
     api_v1_customtext_readWatcher,
     api_v1_customtext_updateWatcher,
     api_v1_customtext_partial_updateWatcher,
+    api_v1_fnhgjhjgjh_listWatcher,
+    api_v1_fnhgjhjgjh_createWatcher,
+    api_v1_fnhgjhjgjh_readWatcher,
+    api_v1_fnhgjhjgjh_updateWatcher,
+    api_v1_fnhgjhjgjh_partial_updateWatcher,
+    api_v1_fnhgjhjgjh_deleteWatcher,
     api_v1_homepage_listWatcher,
     api_v1_homepage_readWatcher,
     api_v1_homepage_updateWatcher,
     api_v1_homepage_partial_updateWatcher,
     api_v1_login_createWatcher,
     api_v1_signup_createWatcher,
+    api_v1_test_listWatcher,
+    api_v1_test_createWatcher,
+    api_v1_test_readWatcher,
+    api_v1_test_updateWatcher,
+    api_v1_test_partial_updateWatcher,
+    api_v1_test_deleteWatcher,
     rest_auth_login_createWatcher,
     rest_auth_logout_listWatcher,
     rest_auth_logout_createWatcher,

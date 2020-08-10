@@ -1,6 +1,6 @@
 import axios from "axios"
 const appcreation5657API = axios.create({
-  baseURL: "https://app-creation-5657-de-8250-prod.herokuapp.com/",
+  baseURL: "https://app-creation-5657-de-8250.botics.co/",
   headers: { Accept: "application/json", "Content-Type": "application/json" }
 })
 function api_v1_customtext_list() {
@@ -14,6 +14,24 @@ function api_v1_customtext_update(requestBody) {
 }
 function api_v1_customtext_partial_update(requestBody) {
   return appcreation5657API.patch(`/api/v1/customtext/{id}/`, requestBody)
+}
+function api_v1_fnhgjhjgjh_list() {
+  return appcreation5657API.get(`/api/v1/fnhgjhjgjh/`)
+}
+function api_v1_fnhgjhjgjh_create(requestBody) {
+  return appcreation5657API.post(`/api/v1/fnhgjhjgjh/`, requestBody)
+}
+function api_v1_fnhgjhjgjh_read() {
+  return appcreation5657API.get(`/api/v1/fnhgjhjgjh/{id}/`)
+}
+function api_v1_fnhgjhjgjh_update(requestBody) {
+  return appcreation5657API.put(`/api/v1/fnhgjhjgjh/{id}/`, requestBody)
+}
+function api_v1_fnhgjhjgjh_partial_update(requestBody) {
+  return appcreation5657API.patch(`/api/v1/fnhgjhjgjh/{id}/`, requestBody)
+}
+function api_v1_fnhgjhjgjh_delete() {
+  return appcreation5657API.delete(`/api/v1/fnhgjhjgjh/{id}/`)
 }
 function api_v1_homepage_list() {
   return appcreation5657API.get(`/api/v1/homepage/`)
@@ -32,6 +50,24 @@ function api_v1_login_create() {
 }
 function api_v1_signup_create(requestBody) {
   return appcreation5657API.post(`/api/v1/signup/`, requestBody)
+}
+function api_v1_test_list() {
+  return appcreation5657API.get(`/api/v1/test/`)
+}
+function api_v1_test_create(requestBody) {
+  return appcreation5657API.post(`/api/v1/test/`, requestBody)
+}
+function api_v1_test_read() {
+  return appcreation5657API.get(`/api/v1/test/{id}/`)
+}
+function api_v1_test_update(requestBody) {
+  return appcreation5657API.put(`/api/v1/test/{id}/`, requestBody)
+}
+function api_v1_test_partial_update(requestBody) {
+  return appcreation5657API.patch(`/api/v1/test/{id}/`, requestBody)
+}
+function api_v1_test_delete() {
+  return appcreation5657API.delete(`/api/v1/test/{id}/`)
 }
 function rest_auth_login_create(requestBody) {
   return appcreation5657API.post(`/rest-auth/login/`, requestBody)
@@ -77,12 +113,24 @@ export const apiService = {
   api_v1_customtext_read,
   api_v1_customtext_update,
   api_v1_customtext_partial_update,
+  api_v1_fnhgjhjgjh_list,
+  api_v1_fnhgjhjgjh_create,
+  api_v1_fnhgjhjgjh_read,
+  api_v1_fnhgjhjgjh_update,
+  api_v1_fnhgjhjgjh_partial_update,
+  api_v1_fnhgjhjgjh_delete,
   api_v1_homepage_list,
   api_v1_homepage_read,
   api_v1_homepage_update,
   api_v1_homepage_partial_update,
   api_v1_login_create,
   api_v1_signup_create,
+  api_v1_test_list,
+  api_v1_test_create,
+  api_v1_test_read,
+  api_v1_test_update,
+  api_v1_test_partial_update,
+  api_v1_test_delete,
   rest_auth_login_create,
   rest_auth_logout_list,
   rest_auth_logout_create,
